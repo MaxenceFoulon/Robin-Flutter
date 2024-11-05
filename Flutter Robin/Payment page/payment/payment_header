@@ -1,0 +1,52 @@
+import 'package:flutter/material.dart';
+
+class PaymentHeader extends StatelessWidget {
+  const PaymentHeader({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Image.network(
+              'https://cdn.builder.io/api/v1/image/assets/41a911c9752e4131a5cc80a5a1f78842/5e2464121a076a2b599b63e6c1ca04d2ccd0fb69319a3b7964198447c967c58b?apiKey=41a911c9752e4131a5cc80a5a1f78842&',
+              width: 54,
+              height: 21,
+              fit: BoxFit.contain,
+            ),
+            const SizedBox(width: 100),
+            Image.network(
+              'https://cdn.builder.io/api/v1/image/assets/41a911c9752e4131a5cc80a5a1f78842/cb91a9141aa6857ae260e349efb3d963b6c08e7fdd96c90a046eba3e4f79586f?apiKey=41a911c9752e4131a5cc80a5a1f78842&',
+              width: 66,
+              height: 12,
+              fit: BoxFit.contain,
+            ),
+          ],
+        ),
+        const SizedBox(height: 27),
+        Row(
+          children: [
+            Image.network(
+              'https://cdn.builder.io/api/v1/image/assets/41a911c9752e4131a5cc80a5a1f78842/45c82c5cb840f40613c59a51d1438f06074fc098d38dc94312ab8f09fc64eafc?apiKey=41a911c9752e4131a5cc80a5a1f78842&',
+              width: 10,
+              height: 16,
+              fit: BoxFit.contain,
+            ),
+            const SizedBox(width: 26),
+            const Text(
+              'Paiement',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'ES Build',
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
